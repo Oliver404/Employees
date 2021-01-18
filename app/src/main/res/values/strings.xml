@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">EmployesLocation</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirm_password">Confirme contraseña</string>
+    <string name="hint_name">Nombre</string>
+    <string name="add">Registrar</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Registrarse</string>
+
+    <string name="title_activity_loading">Loading</string>
+    <string name="title_activity_login">Bienvenidio</string>
+    <string name="title_activity_employees">Empleados</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_empty_user">Ingrese su correo</string>
+    <string name="error_empty_password">Ingrese su contraseña</string>
+    <string name="error_match_password">Las contraseñas no coinciden</string>
+    <string name="error_invalid_password">Minimo 8 caracteres, una mayuscula, una minuscula y un numero</string>
+    <string name="error_invalid_email">Ingrese un correo valido</string>
+    <string name="error_unregistered_user">Usuario no registrado</string>
+    <string name="error_download_data">Surgio un error al descargar los datos</string>
+    <string name="action_logout">Cerrar sesión</string>
+    <string name="alert_necesary_permission">Es necesario aceptar los permisos, para poder seguir</string>
+    <string name="accept_button">Aceptar</string>
+    <string name="hint_employee">Empleado</string>
+    <string name="action_save">Guardar</string>
+    <string name="save_button">Guardar</string>
+    <string name="error_empty_name">Ingrese el nombre del empleado</string>
+    <string name="error_save_employee">Surgio un error, al guardar al usuario, intente de nuevo</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.oliverbotello.employeslocation.access.login.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInptLyt_Email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/standar_padding"
+            android:layout_marginHorizontal="@dimen/standar_padding"
+            android:hint="@string/hint_email"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtInptEdtTxt_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModel.email}"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInptLyt_Password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtInptLyt_Email"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/standar_padding"
+            android:layout_marginHorizontal="@dimen/standar_padding"
+            android:hint="@string/hint_password"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtInptEdtTxt_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={viewModel.password}"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/outlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtInptLyt_Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/standar_padding"
+            android:text="@string/login"
+            android:onClick="@{() -> viewModel.login()}"
+            style="?attr/materialButtonOutlinedStyle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
